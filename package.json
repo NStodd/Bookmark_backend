@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,9 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {},
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NStodd/Bookmark_backend.git"
@@ -26,4 +30,5 @@
   },
   "homepage": "https://github.com/NStodd/Bookmark_backend#readme",
   "description": ""
+}
 }

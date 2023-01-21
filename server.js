@@ -89,6 +89,15 @@ app.get("/book/:id", async (req, res) => {
     }
   });
 
+  // SHOW ROUTE
+  app.get("/book/show/:id", async(req, res) => {
+    try {
+      res.json(await Book.findById(req.params.id));
+    } catch (error) {
+      res.status(400).json(error);
+    }
+  })
+
 // LISTENER
 
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
